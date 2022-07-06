@@ -48,7 +48,7 @@ metadata:
   tags:
     - microservice
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tap-tanzu-java-web-app'
     'backstage.io/techdocs-ref': dir:.
   links:
     - url: https://github.com/jianhuabi/tap-tanzu-java-web-app
