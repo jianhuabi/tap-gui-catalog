@@ -19,7 +19,7 @@ spec:
   type: team
   profile:
     displayName: Acme Apps Operator Team
-    email: mbi@vmware.com
+    email: tap-admin@vmware.com
   parent: acme-dev
   children: []
 ---
@@ -31,7 +31,7 @@ spec:
   profile:
     displayName: Michael(建华)
     email: mbi@vmware.com
-  memberOf: [acme-dev]
+  memberOf: [tap-admin]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
