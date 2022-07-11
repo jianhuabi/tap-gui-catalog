@@ -36,6 +36,16 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
+  name: michaelbi
+spec:
+  profile:
+    displayName: Michael(建华)
+    email: mbi@vmware.com
+  memberOf: [acme-dev]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
   name: naomi
 spec:
   profile:
