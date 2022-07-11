@@ -6,7 +6,7 @@ metadata:
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
-  owner: tap-admin
+  owner: mbi@vmware.com
   domain: acme-sre
 
 ---
