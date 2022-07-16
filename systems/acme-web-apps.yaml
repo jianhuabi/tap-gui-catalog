@@ -86,10 +86,10 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: k8s-with-cnr-tanzu
+  name: k8s-acme-web-apps
   description: ACME Application 需要运行在Tanzu Application Platform 提供的CNR Infra 平台上；或兼容Knative的K8S环境中。
 spec:
-  type: cluster
+  type: k8s-cluster
   owner: tap-admin
   system: acme-web-apps
 ---
