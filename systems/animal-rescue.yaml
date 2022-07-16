@@ -55,6 +55,17 @@ spec:
   owner: platform-team
   system: animal-rescue
 ---
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: k8s-animal-rescue
+  description: ACME Application 需要运行在Tanzu Application Platform 提供的CNR Infra 平台上；或兼容Knative的K8S环境中。
+spec:
+  type: k8s-cluster
+  owner: tap-admin
+  system: animal-rescue
+---
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
