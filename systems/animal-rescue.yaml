@@ -20,7 +20,7 @@ metadata:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=animal-rescue-frontend'
     'backstage.io/techdocs-ref': dir:.
 spec:
-  type: website
+  type: service
   lifecycle: alpha
   owner: dev-team-2
   system: animal-rescue
