@@ -63,7 +63,6 @@ spec:
   owner: platform-team
   system: animal-rescue
 ---
----
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
