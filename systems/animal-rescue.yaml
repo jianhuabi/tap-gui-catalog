@@ -37,8 +37,6 @@ metadata:
     'backstage.io/techdocs-ref': dir:.
 spec:
   type: service
-  providesApis:
-    - animal-rescue-api
   lifecycle: alpha
   owner: dev-team-2
   system: animal-rescue
