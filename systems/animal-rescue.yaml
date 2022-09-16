@@ -3,8 +3,6 @@ kind: System
 metadata:
   name: animal-rescue
   description: Animal Rescue Application
-  annotations:
-    'backstage.io/techdocs-ref': dir:.
 spec:
   owner: dev-team-2
   domain: acme-internal-apps
@@ -48,10 +46,18 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: postgres
+  name: animal-rescue-gateway
+  description: Tanzu Spring Cloud Gateway
+spec:
+  type: database
+  owner: platform-team
+  system: animal-rescue
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: animal-rescue-postgres
   description: Tanzu SQL Postgres Database
-  annotations:
-    'backstage.io/techdocs-ref': dir:.
 spec:
   type: database
   owner: platform-team
@@ -72,7 +78,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: animal-rescue-api
-  description: The API for Animal Rescue Application
+  description: The API for Animal Rescue Application (placeholder)
   links:
     - url: https://api.agify.io
       title: API Definition

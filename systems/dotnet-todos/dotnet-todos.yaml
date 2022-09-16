@@ -1,0 +1,45 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: dotnet-todos
+  description: Dot Net Todos Application
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  owner: dev-team-1
+  domain: acme-internal-apps
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dotnet-todos-app
+  description: Todos frontend SPA
+  links:
+    - url: https://dotnet-todos.appref2.appref.end2end.link
+      title: Employee Todos
+      icon: dashboard
+  tags:
+    - microservice
+    - angular
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=dotnet-todos-app'
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  type: service
+  consumesApis:
+    - dotnet-todos-api 
+  lifecycle: alpha
+  owner: dev-team-1
+  system: dotnet-todos
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: sql-server
+  description: SQL Server Database
+spec:
+  type: database
+  owner: platform-team
+  system: dotnet-todos
